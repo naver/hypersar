@@ -7,7 +7,9 @@ This repository provides the source code for *Joint Personalized Search and Reco
 
 **Abstract:** Traditionally, the search and recommendation tasks are performed separately, by distinct models. Having a unique model for the two tasks is however particularly appealing for platforms that offer search and recommendation services to a shared user base over common items. In this paper, we study this unification scenario denoted as Joint Personalized Search and Recommendation (JPSR). To tackle this problem, we introduce HyperSaR, an hypergraph convolutional approach for search and recommendation. From the interaction data, we first build an hypergraph composed of user, item and query term nodes in which recommendation instances form user-item edges and search instances define user-item-query hyperedges. We then propagate user, item and query term embeddings using hypergraph convolution, and train HyperSaR with the combination of two complementary losses. The first one amounts to assessing the probability of an interaction, while the second one aims at predicting the query of a search interaction given a (user, item) pair. The proposed method is evaluated on the JPSR task using three datasets: a real-world, industrial dataset, and the public MovieLens and Lastfm datasets, which have been adapted to the task. Our experiments demonstrate the superior effectiveness of HyperSaR over competing approaches.
 
-![HyperSaR diagram](hypersar-diagram.pdf)
+<p align="center">
+<img src="hypersar-diagram.pdf" alt="HyperSaR model"/>
+</p>
 
 If you find this code useful, please consider citing us:
 
